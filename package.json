@@ -1,0 +1,56 @@
+{
+  "name": "@umituz/react-native-sensors",
+  "version": "1.0.0",
+  "description": "Step counting and sensor management for React Native with expo-sensors",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit",
+    "clean": "rm -rf lib",
+    "prebuild": "npm run clean",
+    "prepublishOnly": "npm run build",
+    "version:patch": "npm version patch -m 'chore: release v%s'",
+    "version:minor": "npm version minor -m 'chore: release v%s'",
+    "version:major": "npm version major -m 'chore: release v%s'"
+  },
+  "keywords": [
+    "react-native",
+    "sensors",
+    "pedometer",
+    "step-counter",
+    "expo-sensors"
+  ],
+  "author": "Ümit UZ <umit@umituz.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/umituz/react-native-sensors"
+  },
+  "peerDependencies": {
+    "expo-sensors": "*",
+    "expo-modules-core": "*",
+    "react": ">=18.2.0",
+    "react-native": ">=0.74.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.45",
+    "@types/react-native": "^0.73.0",
+    "expo-sensors": "*",
+    "expo-modules-core": "*",
+    "react": "^18.2.0",
+    "react-native": "^0.74.0",
+    "typescript": "^5.3.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "lib",
+    "src",
+    "README.md",
+    "LICENSE"
+  ]
+}
+
